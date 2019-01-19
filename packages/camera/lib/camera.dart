@@ -264,6 +264,7 @@ class CameraController extends ValueNotifier<CameraValue> {
         break;
       case 'cameraClosing':
         value = value.copyWith(isRecordingVideo: false);
+        value = value.copyWith(isStreamingImages: false);
         break;
     }
   }
